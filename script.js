@@ -6,17 +6,17 @@ const content = document.getElementById("content");
  * مثال رابط مجلد درايف: https://drive.google.com/drive/folders/XXXXXXXXXXXX
  */
 const pages = {
-  page1: { title: "01 أداء الواجبات الوظيفية", drive: "https://drive.google.com/drive/folders/REPLACE_WITH_FOLDER_ID_01" },
-  page2: { title: "02 / التفاعل مع المجتمع المهني", drive: "https://drive.google.com/drive/folders/REPLACE_WITH_FOLDER_ID_02" },
-  page3: { title: "03 / التفاعل مع أولياء الأمور", drive: "https://drive.google.com/drive/folders/REPLACE_WITH_FOLDER_ID_03" },
-  page4: { title: "04 / التنوع في استراتيجيات التدريس", drive: "https://drive.google.com/drive/folders/REPLACE_WITH_FOLDER_ID_04" },
-  page5: { title: "05 / تحسين نتائج المتعلمين", drive: "https://drive.google.com/drive/folders/REPLACE_WITH_FOLDER_ID_05" },
-  page6: { title: "06/ إعداد وتنفيذ خطة التعلم", drive: "https://drive.google.com/drive/folders/REPLACE_WITH_FOLDER_ID_06" },
-  page7: { title: "07 / توظيف تقنيات ووسائل التعلم المناسبة", drive: "https://drive.google.com/drive/folders/REPLACE_WITH_FOLDER_ID_07" },
-  page8: { title: "08 / تهيئة بيئة تعليمية", drive: "https://drive.google.com/drive/folders/REPLACE_WITH_FOLDER_ID_08" },
-  page9: { title: "09 / الإدارة الصفية", drive: "https://drive.google.com/drive/folders/REPLACE_WITH_FOLDER_ID_09" },
-  page10: { title: "10/ تحليل نتائج المتعلمين وتشخيص مستوياتهم", drive: "https://drive.google.com/drive/folders/REPLACE_WITH_FOLDER_ID_10" },
-  page11: { title: "/11 / تنوع أساليب التقويم", drive: "https://drive.google.com/drive/folders/REPLACE_WITH_FOLDER_ID_11" }
+  page1: { title: "01 أداء الواجبات الوظيفية", drive: "https://drive.google.com/drive/u/1/folders/1oXbqcwMvjj81V1YfleDBhZcSMk4OYeLy" },
+  page2: { title: "02 / التفاعل مع المجتمع المهني", drive: "https://drive.google.com/drive/u/1/folders/1PtDNvRRjQ0UPJ4nWYvtehbzG-0Fo4Mym" },
+  page3: { title: "03 / التفاعل مع أولياء الأمور", drive: "https://drive.google.com/drive/u/1/folders/1kRe1JGYdUY5U-a37666wWxXFNSc9ohWr" },
+  page4: { title: "04 / التنوع في استراتيجيات التدريس", drive: "https://drive.google.com/drive/u/1/folders/1U_xJv3vshMtNdjvM9VeWtHY-Z_a1JQh4" },
+  page5: { title: "05 / تحسين نتائج المتعلمين", drive: "https://drive.google.com/drive/u/1/folders/1O7TjFPc46p-x8SldGtXjYRhLfIaU1M-w" },
+  page6: { title: "06/ إعداد وتنفيذ خطة التعلم", drive: "https://drive.google.com/drive/u/1/folders/1QpFZ3MHut6jdgqPTk5Nidc1VADukyh9w" },
+  page7: { title: "07 / توظيف تقنيات ووسائل التعلم المناسبة", drive: "https://drive.google.com/drive/u/1/folders/1XZUEOj4z3mCGwoeq0YP_1yZEDMNzKoLc" },
+  page8: { title: "08 / تهيئة بيئة تعليمية", drive: "https://drive.google.com/drive/u/1/folders/1MrD02m3xATv7lQSEs8xYEQvC_egan5qj" },
+  page9: { title: "09 / الإدارة الصفية", drive: "https://drive.google.com/drive/u/1/folders/1kIXvPb0hthB6CwrLJOSx9XHe_dFjyBbD" },
+  page10: { title: "10/ تحليل نتائج المتعلمين وتشخيص مستوياتهم", drive: "https://drive.google.com/drive/u/1/folders/16UgGlcssWECwsNUlaiu6eLSO8jKFQ9Ls" },
+  page11: { title: "/11 / تنوع أساليب التقويم", drive: "https://drive.google.com/drive/u/1/folders/1MrCfJkW3cIlxcH-oWDJ9SQDBe1iMaT1v" }
 };
 
 function renderPage(id) {
