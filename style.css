@@ -1,0 +1,108 @@
+body {
+  font-family: 'Tahoma', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #000428, #004e92);
+  color: #e0e0e0;
+  direction: rtl;
+}
+
+header {
+  background: #0d1b2a;
+  color: #00ffcc;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 2px solid #00ffcc;
+}
+
+header h1 { margin: 0; animation: glow 2s infinite alternate; }
+
+.container { display: flex; }
+
+.sidebar {
+  width: 280px;
+  background: #1b263b;
+  padding: 1rem;
+  border-left: 2px solid #00ffcc;
+}
+
+.sidebar ul { list-style: none; padding: 0; margin: 0; }
+.sidebar ul li { margin: 10px 0; }
+.sidebar ul li a {
+  text-decoration: none;
+  color: #00ffcc;
+  padding: 10px 12px;
+  display: block;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-weight: 600;
+}
+.sidebar ul li a:hover { background: #00ffcc; color: #111; transform: translateX(-5px); }
+
+main { flex: 1; padding: 20px; }
+
+.page {
+  background: rgba(13,27,42,0.92);
+  padding: 22px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  animation: fadeInUp 0.6s ease;
+}
+
+.note {
+  background: rgba(0,255,204,0.1);
+  border: 1px dashed #00ffcc;
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* صندوق الرفع */
+.upload-box {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid #244d61;
+  border-radius: 12px;
+  background: rgba(27,38,59,0.7);
+}
+.upload-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.file-label {
+  cursor: pointer;
+  background: #00ffcc;
+  color: #072b3a;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.hidden-input { display: none; }
+.upload-link {
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: #0ea5e9;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+.upload-link:hover { filter: brightness(1.05); }
+.hint { font-size: 0.9rem; opacity: 0.9; }
+
+.file-list { margin-top: 10px; padding-right: 18px; }
+.file-list li { margin: 4px 0; }
+
+/* Animations */
+@keyframes glow { from { text-shadow: 0 0 10px #00ffcc; } to { text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffcc; } }
+.fade-in { animation: fadeIn 1s ease-in-out; }
+.slide-in-right { animation: slideInRight 1s ease; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideInRight { from { transform: translateX(100px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
